@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+body {
+  background-color: $bgc;
+  color: $other-title;
+  font-family: "PlayfairDisplay", Arial, sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer';
+}
+.page-header{
+  grid-area: header;
+}
+.content{
+  grid-area: content;
+}
+.page-footer{
+  grid-area: footer;
+}

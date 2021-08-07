@@ -1,0 +1,21 @@
+@mixin a-none ($color){
+  text-decoration: none;
+  color: $color;
+  text-transform: uppercase;
+}
+%li-none{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@mixin font__size ($font-size, $line-height){
+  font-size: $font-size;
+  line-height: $line-height;
+}
+%center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// @include
