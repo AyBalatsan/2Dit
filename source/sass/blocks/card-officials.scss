@@ -1,0 +1,35 @@
+.card-officials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-officials__item {
+}
+.card-officials__title-post {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 12px;
+  line-height: 116.88%;
+  color: $text-card-up;
+}
+.card-officials__title-name {
+  font-family: Montserrat-SemiBold, sans-serif;
+  font-size: 16px;
+  line-height: 116.88%;
+  color: $text-card-meddle;
+}
+.card-officials__subtitle-down {
+}
+.card-officials__title-city {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 12px;
+  line-height: 116.88%;
+  color: $text-card-down;
+}
+.card-officials__title-class {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 12px;
+  line-height: 116.88%;
+  color: $text-card-down2;
+}
+.card-officials__img {
+}

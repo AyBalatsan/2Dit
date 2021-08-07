@@ -27,3 +27,10 @@ body {
 .page-footer{
   grid-area: footer;
 }
+.main-title{
+  color: $text-title;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: Montserrat-Bold, sans-serif;
+}
