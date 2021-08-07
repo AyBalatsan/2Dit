@@ -6,22 +6,23 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: $bgc;
-  color: $other-title;
-  font-family: "PlayfairDisplay", Arial, sans-serif;
-  font-weight: 400;
+  font-family: Montserrat-SemiBold, sans-serif;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
     'header'
     'content'
+    'aside'
     'footer';
 }
 .page-header{
   grid-area: header;
 }
-.content{
+.page-main{
   grid-area: content;
+}
+.page-aside{
+  grid-area: aside;
 }
 .page-footer{
   grid-area: footer;
