@@ -5,7 +5,7 @@
   background-image: url(../img/stadium.jpg);
   background-position: 87% 43%;
   height: 370px;
-  width: 290px;
+  width: 96.5%;
   margin: 0 auto;
   z-index: 1;
   border-radius: 15px;
@@ -21,14 +21,14 @@
   position: relative;
   display: block;
   height: 370px;
-  width: 290px;
+  width: 100%;
   backdrop-filter: blur(5px);
   border-radius: 15px;
   @media (min-width: $intermediate) {
-    width: 500px;
+
   }
   @media (min-width: $tablet-width) {
-    width: 240px;
+
   }
 }
 .s-card__title-city {

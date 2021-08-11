@@ -9,12 +9,15 @@
 .team__composition-title {
   margin: 24px 0 0 0;
   text-align: center;
+
 }
 .team__list {
-  padding-left: 12px;
+  padding: 0 6px;
   list-style-type: none;
 	counter-reset: num;
-
+  @media (min-width: $intermediate) {
+   padding: 8px;
+  }
 }
 
 .team__list--second{

@@ -1,9 +1,12 @@
 .page-main {
-  background-color: $bgc-basic;
+
 }
 .page-main__wrapper {
   margin: 0 auto;
-  padding: 0  10px;
+  padding: 0  15px 0 2%;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 .page-main__title {
   color: $text-main;
@@ -13,4 +16,5 @@
   margin: 0;
   font-size: 34px;
   text-align: center;
+  margin-top: 16px;
 }

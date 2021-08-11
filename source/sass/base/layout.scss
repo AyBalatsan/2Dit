@@ -7,6 +7,7 @@ html {
 }
 body {
   font-family: Montserrat-SemiBold, sans-serif;
+  background-color: $bgc-basic;
   font-weight: 600;
   display: grid;
   grid-template-columns: 100%;
@@ -16,11 +17,13 @@ body {
     'aside'
     'footer';
   @media (min-width: $tablet-width) {
-    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    grid-template-columns: minmax(480px, 795px) 260px;
     grid-template-areas:
       'header header'
       'content aside'
       'footer footer';
+
   }
 }
 .page-header{
