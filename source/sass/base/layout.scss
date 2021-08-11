@@ -15,6 +15,13 @@ body {
     'content'
     'aside'
     'footer';
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+      'header header'
+      'content aside'
+      'footer footer';
+  }
 }
 .page-header{
   grid-area: header;

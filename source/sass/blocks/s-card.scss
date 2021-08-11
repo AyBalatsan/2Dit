@@ -12,6 +12,9 @@
   @media (min-width: $intermediate) {
     width: 500px;
   }
+  @media (min-width: $tablet-width) {
+   width: 240px;
+  }
 }
 .s-card__shell{
   z-index: 2;
@@ -24,6 +27,9 @@
   @media (min-width: $intermediate) {
     width: 500px;
   }
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
 }
 .s-card__title-city {
   position: absolute;
@@ -34,6 +40,9 @@
   z-index: 3;
   @media (min-width: $intermediate) {
     font-size: 34px;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
   }
 }
 .s-card__weather-block {
@@ -77,8 +86,12 @@ s-card__weather-icon{
     width: 400px;
     font-size: 16px;
   }
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    width: 200px;
+  }
 }
-.s-card__block-dowm{
+.s-card__block-down{
   display: flex;
   justify-content: space-between;
   margin-top: 12px;

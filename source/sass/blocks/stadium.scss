@@ -1,4 +1,7 @@
 .stadium {
+  @media (min-width: $tablet-width) {
+    margin-top: 126px;
+  }
 }
 .stadium__shell {
 }
