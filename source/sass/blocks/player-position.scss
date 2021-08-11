@@ -1,8 +1,16 @@
 .player-position {
+  display: none;
+  @media (min-width: $intermediate) {
+    display: flex;
+    align-items: center;
+  }
 }
 .player-position__title {
   font-family: Montserrat-SemiBold, sans-serif;
   font-size: 16px;
   line-height: 116.88%;
   color: $text-nick;
+  @media (min-width: $intermediate) {
+    margin: 0 auto;
+  }
 }

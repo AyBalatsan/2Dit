@@ -3,12 +3,40 @@
 .team-lineups__shell {
 }
 .team-lineups__header {
+  display: flex;
+  flex-direction:column;
+  margin-top: 14px;
+  align-items: center;
+  @media (min-width: $intermediate) {
+    flex-direction:row;
+    justify-content: center;
+  }
 }
 .team-lineups__link {
+  display: flex;
   color: $text-team;
-  font-size: 12px;
+  justify-content:center;
+  // font-size: 12px;
+  font-size: 16px;
   line-height: 116.88%;
   text-decoration: none;
+  border-bottom: 2px solid $border-team-lineups;
+  width: 240px;
+  padding-bottom: 5px;
+  &+&{
+    margin-top: 12px;
+    @media (min-width: $intermediate) {
+      margin-top: 0;
+    }
+  }
+}
+.team-lineups__header .team-lineups__link--active{
+  border-bottom: 2px solid $border-team-lineups-active;
 }
 .team-lineups__img {
+}
+.team-lineups__title{
+  margin: 0 0 0 10px;
+  align-self: center;
+
 }

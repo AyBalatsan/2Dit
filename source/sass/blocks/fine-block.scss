@@ -3,10 +3,18 @@
   font-size: 14px;
   line-height: 175%;
   color: $text-card;
+  width: 100px;
+  display: flex;
+  @media (min-width: $intermediate) {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 .fine-block__yellow-card {
 }
 .fine-block__red-card {
 }
 .fine-block__update {
+  display: flex;
+  align-items: center;
 }

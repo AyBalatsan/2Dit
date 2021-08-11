@@ -17,13 +17,13 @@
       <section class="team-lineups">
         <div class="team-lineups__shell">
           <header class="team-lineups__header">
-            <a class="team-lineups__link" href="#">
+            <a class="team-lineups__link team-lineups__link--active" href="#">
               <img class="team-lineups__img" src="img/dinamo.png" alt="Динамо-Москва" width="28" height="28">
-              ФК Динамо Москва
+              <p class="team-lineups__title">ФК Динамо Москва</p>
             </a>
             <a class="team-lineups__link" href="#">
               <img class="team-lineups__img" src="img/tver.png" alt="Тверь" width="28" height="28">
-              ФК Тверь
+              <p class="team-lineups__title">ФК Тверь</p>
             </a>
           </header>
           <div class="team">
@@ -189,7 +189,7 @@
               </div>
               <div class="team__second">
                 <h2 class="team__composition-title main-title">Запасные</h2>
-                <ol class="team__list" start="12">
+                <ol class="team__list team__list--second">
                   <li class="team__item">
                     <div class="person-block">
                       <img class="person-block__img" src="img/rus.png" alt="rus" width="20" height="20">
@@ -377,17 +377,19 @@
         <div class="stadium__shell">
           <h2 class="stadium__title main-title">Стадион</h2>
           <div class="s-card">
-            <h3 class="s-card__title-city">Москва</h3>
-            <div class="s-card__weather-block">
-              <img src="s-card__weather-icon" alt="weather icon">
-              <p class="s-card__temperature">+5&deg;C</p>
-            </div>
-            <div class="s-card__description">
-              <img class="s-card__marker" src="img/marker.png" alt="marker" width="12" height="16">
-              <h3 class="s-card__stadium-name">Стадион Динамо им. Льва Ивановича Яшина</h3>
-              <div>
-                <img class="s-card__person-icon" src="img/person.png" alt="person" width="16" height="15">
-                <p class="s-card__capacity">5 000 чел.</p>
+            <div  class="s-card__shell">
+              <h3 class="s-card__title-city">Москва</h3>
+              <div class="s-card__weather-block">
+                <img class="s-card__weather-icon" src="img/cloud.png" alt="weather icon" width="55" height="37">
+                <p class="s-card__temperature">+5&deg;C</p>
+              </div>
+              <div class="s-card__description">
+                <img class="s-card__marker" src="img/marker.png" alt="marker" width="12" height="16">
+                <h3 class="s-card__stadium-name">Стадион Динамо им. Льва Ивановича Яшина</h3>
+                <div class="s-card__block-dowm">
+                  <img class="s-card__person-icon" src="img/person.png" alt="person" width="16" height="15">
+                  <p class="s-card__capacity">5 000 чел.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -413,7 +415,7 @@
                 <span class="card-officials__title-city">Омск</span>
                 <span class="card-officials__title-class">1 кат.</span>
               </p>
-              <img class="card-officials__img" src="img/flag-opacity.png" alt="flag" width="57" height="63">
+              <img class="card-officials__img card-officials__img--flag" src="img/flag-opacity.png" alt="flag" width="57" height="63">
             </li>
             <li class="card-officials__item">
               <p class="card-officials__title-post">Второй ассистент судьи</p>
@@ -422,7 +424,7 @@
                 <span class="card-officials__title-city">Омск</span>
                 <span class="card-officials__title-class">1 кат.</span>
               </p>
-              <img class="card-officials__img" src="img/flag-opacity.png" alt="flag" width="57" height="63">
+              <img class="card-officials__img card-officials__img--flag" src="img/flag-opacity.png" alt="flag" width="57" height="63">
             </li>
             <li class="card-officials__item">
               <p class="card-officials__title-post">Резервный судья</p>
@@ -431,7 +433,7 @@
                 <span class="card-officials__title-city">Омск</span>
                 <span class="card-officials__title-class">1 кат.</span>
               </p>
-              <img class="card-officials__img" src="#" alt="#">
+              <!-- <img class="card-officials__img" src="#" alt="#"> -->
             </li>
             <li class="card-officials__item">
               <p class="card-officials__title-post">Делегат матча</p>
@@ -440,7 +442,7 @@
                 <span class="card-officials__title-city">Омск</span>
                 <span class="card-officials__title-class"></span>
               </p>
-              <img class="card-officials__img" src="#" alt="#">
+              <!-- <img class="card-officials__img" src="#" alt="#"> -->
             </li>
             <li class="card-officials__item">
               <p class="card-officials__title-post">VAR</p>

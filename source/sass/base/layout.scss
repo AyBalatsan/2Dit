@@ -7,6 +7,7 @@ html {
 }
 body {
   font-family: Montserrat-SemiBold, sans-serif;
+  font-weight: 600;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
@@ -30,7 +31,8 @@ body {
 .main-title{
   color: $text-title;
   text-transform: uppercase;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 140%;
   font-family: Montserrat-Bold, sans-serif;
+  font-size: 24px;
 }

@@ -7,9 +7,41 @@
 .team__second{}
 .team__lead{}
 .team__composition-title {
+  margin: 24px 0 0 0;
+  text-align: center;
 }
 .team__list {
+  padding-left: 12px;
+  list-style-type: none;
+	counter-reset: num;
+
+}
+
+.team__list--second{
+  counter-reset: num 11;
 }
 .team__item {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  @media (min-width: $intermediate) {
+    display: grid;
+    grid-template-columns: 30px 260px auto auto;
+
+  }
+  &:nth-child(odd){
+    background-color: $bgc-grey;
+  }
+  &+&{
+    margin-top: 12px;
+  }
+  &::before{
+    content: counter(num);
+	  counter-increment: num;
+    display: block;
+    width: 28px;
+    text-align: center;
+    margin-top: 4px;
+  }
 }
 

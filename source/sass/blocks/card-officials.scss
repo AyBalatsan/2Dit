@@ -2,34 +2,66 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  @media (min-width: $intermediate) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
 }
 .card-officials__item {
+  position: relative;
+  background-color: $bgc-white;
+  border: 1px solid $border-card;
+  border-radius: 7px;
+  width: 238px;
+  height: 119px;
+  padding: 0 18px;
+  margin: 0 auto;
+  &+&{
+    margin-top: 12px;
+    @media (min-width: $intermediate) {
+      margin-top: 0;
+    }
+  }
 }
 .card-officials__title-post {
   font-family: Montserrat-Bold, sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 116.88%;
   color: $text-card-up;
 }
 .card-officials__title-name {
   font-family: Montserrat-SemiBold, sans-serif;
+  width: 160px;
   font-size: 16px;
   line-height: 116.88%;
   color: $text-card-meddle;
 }
 .card-officials__subtitle-down {
+  display: flex;
+  justify-content: space-between;
 }
 .card-officials__title-city {
   font-family: Montserrat-Bold, sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 116.88%;
   color: $text-card-down;
 }
 .card-officials__title-class {
   font-family: Montserrat-Bold, sans-serif;
+  font-weight: 700;
   font-size: 12px;
   line-height: 116.88%;
   color: $text-card-down2;
 }
 .card-officials__img {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+}
+.card-officials__img--flag {
+  right: 0px;
 }
