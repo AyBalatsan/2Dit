@@ -32,6 +32,9 @@
     grid-template-columns: 30px 260px auto auto;
 
   }
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 45px;
+  }
   &:nth-child(odd){
     background-color: $bgc-grey;
   }
