@@ -6,15 +6,31 @@
   width: 100px;
   display: flex;
   @media (min-width: $intermediate) {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    width: 120px;
+  }
+  @media (min-width: $desktop-width) {
+
+  }
+}
+.fine-block__item {
+  &+& {
+    margin-left: 3px;
   }
 }
 .fine-block__yellow-card {
+  display: flex;
+  align-items: center;
 }
 .fine-block__red-card {
+  display: flex;
+  align-items: center;
 }
 .fine-block__update {
   display: flex;
   align-items: center;
+}
+.fine-block__img{
+  margin-left: 5px;
 }

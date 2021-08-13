@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   width: 260px;
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 }
 .person-block__img {
   margin-right: 8px;
