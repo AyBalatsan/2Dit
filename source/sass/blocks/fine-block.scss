@@ -11,12 +11,12 @@
     width: 120px;
   }
   @media (min-width: $desktop-width) {
-
+    font-size: 15px;
   }
 }
 .fine-block__item {
   &+& {
-    margin-left: 3px;
+    margin-left: 28px;
   }
 }
 .fine-block__yellow-card {
@@ -30,6 +30,10 @@
 .fine-block__update {
   display: flex;
   align-items: center;
+  & .fine-block__img{
+    width: 12px;
+    height: 12px;
+  }
 }
 .fine-block__img{
   margin-left: 5px;

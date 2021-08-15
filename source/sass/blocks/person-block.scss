@@ -3,18 +3,22 @@
   align-items: center;
   width: 260px;
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
+    margin-left: 60px;
+    width: 350px;
   }
 }
 .person-block__img {
   margin-right: 8px;
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
+  }
 }
 .person-block__nick {
 
   font-family: Montserrat-SemiBold, sans-serif;
-  // font-size: 16px;
   line-height: 116.88%;
   color: $text-nick;
   margin: 0;
   font-size: 16px;
+
 }

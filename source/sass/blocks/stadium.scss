@@ -1,8 +1,14 @@
 .stadium {
-
+  @media (min-width: $desktop-width) {
+    margin-top: 85px;
+  }
 }
 .stadium__shell {
 }
 .stadium__title {
   text-align: center;
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin: 0;
+  }
 }

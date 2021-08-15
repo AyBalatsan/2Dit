@@ -7,6 +7,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+  @media (min-width: $desktop-width) {
+    padding: 0 15px 48px 2%;
+  }
 }
 .page-main__title {
   color: $text-main;

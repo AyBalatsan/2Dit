@@ -15,6 +15,10 @@
   @media (min-width: $tablet-width) {
    width: 240px;
   }
+  @media (min-width: $desktop-width) {
+    height: 320px;
+    margin-top: 24px;
+  }
 }
 .s-card__shell{
   z-index: 2;
@@ -27,8 +31,8 @@
   @media (min-width: $intermediate) {
 
   }
-  @media (min-width: $tablet-width) {
-
+  @media (min-width: $desktop-width) {
+    height: 320px;
   }
 }
 .s-card__title-city {
@@ -43,6 +47,9 @@
   }
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    top: 21px;
+    left: 21px;
+    font-weight: 500;
   }
 }
 .s-card__weather-block {
@@ -55,7 +62,10 @@
   right: 43px;
   top: 58px;
   z-index: 3;
-
+  @media (min-width: $desktop-width) {
+    right: 23px;
+    top: 26px;
+  }
 }
 s-card__weather-icon{
 
@@ -64,6 +74,9 @@ s-card__weather-icon{
   font-size: 36px;
   font-family: Montserrat-Medium, sans-serif;
   margin: 10px 0 0 0;
+  @media (min-width: $desktop-width) {
+    margin: 18px 0 0 0;
+  }
 }
 .s-card__description {
   position: absolute;
@@ -71,7 +84,10 @@ s-card__weather-icon{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-
+  @media (min-width: $desktop-width) {
+    top: 246px;
+    bottom: auto;
+  }
 }
 .s-card__marker {
 }
@@ -89,6 +105,9 @@ s-card__weather-icon{
   @media (min-width: $tablet-width) {
     font-size: 14px;
     width: 200px;
+  }
+  @media (min-width: $desktop-width){
+    padding: 0 0 16px 0;
   }
 }
 .s-card__block-down{

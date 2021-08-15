@@ -14,6 +14,14 @@
     margin: 28px 0 0 28px;
   }
 }
+.team__composition-title--second{
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
+}
+.team__composition-title--lead{
+  margin-top: 20px;
+}
 .team__list {
   padding: 0 6px;
   list-style-type: none;
@@ -21,17 +29,20 @@
   @media (min-width: $intermediate) {
    padding: 8px;
   }
+  @media (min-width: $desktop-width) {
+    padding: 3px 18px;
+  }
 }
 
 .team__list--second{
   counter-reset: num 11;
   @media (min-width: $desktop-width) {
-    margin-top: 9px;
+    margin-top: 15px;
   }
 }
 .team__list--trainer{
   @media (min-width: $desktop-width) {
-    margin-top: 9px;
+    margin-top: 15px;
   }
 }
 .team__item {
@@ -43,8 +54,8 @@
     grid-template-columns: 30px 260px auto auto;
   }
   @media (min-width: $desktop-width) {
-    grid-template-rows: 45px;
-    grid-template-columns: 300px auto auto;
+    grid-template-rows: 46px;
+    grid-template-columns: 418px 250px 105px;
   }
   &:nth-child(odd){
     background-color: $bgc-grey;
@@ -65,7 +76,7 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 50%;
-      left: 36px;
+      left: 27px;
       transform: translate(-50%, -50%);
       margin-top: 0;
     }

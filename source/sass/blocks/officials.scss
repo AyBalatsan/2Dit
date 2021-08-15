@@ -1,9 +1,15 @@
 .officials {
-
+  @media (min-width: $desktop-width) {
+    margin-top: 34px;
+  }
 }
 .officials__shell {
   padding-bottom: 20px;
 }
 .officials__title {
   text-align: center;
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-bottom: 16px;
+  }
 }

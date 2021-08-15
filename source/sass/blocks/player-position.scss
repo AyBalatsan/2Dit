@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
   }
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+  }
 }
 .player-position__title {
   font-family: Montserrat-SemiBold, sans-serif;
@@ -12,5 +15,8 @@
   color: $text-nick;
   @media (min-width: $intermediate) {
     margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
