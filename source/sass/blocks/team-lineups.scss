@@ -45,6 +45,10 @@
     margin: 8px 0 0 30px;
     border-bottom: none;
     padding-bottom: 0px;
+
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
   }
   &+&{
     margin-top: 12px;
@@ -56,6 +60,19 @@
 }
 .team-lineups__header .team-lineups__link--active{
    border-bottom: 2px solid $border-team-lineups-active;
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      overflow: hidden;
+      width: 300px;
+      height: 397px;
+      position: absolute;
+      bottom: -371px;
+      left: 0;
+      background: rgb(0,14,255);
+      background: radial-gradient(circle, #1900ff 3%, rgba(255, 255, 255, 0) 83%)
+  }
+  }
 }
 .team-lineups__img {
 }

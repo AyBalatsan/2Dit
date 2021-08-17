@@ -1,5 +1,7 @@
 .team {
-  opacity: 0;
+  &--visible {
+    animation: pulse 0.65s ease-in-out forwards;
+  }
 }
 .team__shell {
 }

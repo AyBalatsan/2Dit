@@ -5,18 +5,14 @@ const links = document.querySelectorAll('.team-lineups__link');
 
 const point = 1;
 
-let opacityUp = (block) => {
-  block.style.opacity = 1;
-  console.log(block.style.opacity);
-}
-
 const getTeam = (point) => {
   let i;
   for (i = 0; i < teams.length; i++){
     teams[i].classList.add('visually-hidden');
+    teams[i].classList.remove('team--visible');
   }
   teams[point - 1].classList.remove('visually-hidden');
-  setTimeout(opacityUp(teams[point - 1]), 20000);
+  teams[point - 1].classList.add('team--visible');
 }
 getTeam(point);
 

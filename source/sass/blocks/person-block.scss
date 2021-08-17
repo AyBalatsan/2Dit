@@ -14,11 +14,25 @@
   }
 }
 .person-block__nick {
-
   font-family: Montserrat-SemiBold, sans-serif;
   line-height: 116.88%;
   color: $text-nick;
   margin: 0;
   font-size: 16px;
-
+  &--k::after{
+    @media (min-width: $desktop-width) {
+      content: "(к)";
+      color: $text-coeff;
+      margin-left: 14px;
+      font-weight: 500;
+    }
+  }
+  &--mf::after{
+    @media (min-width: $desktop-width) {
+      content: "мф";
+      color: $text-coeff;
+      margin-left: 14px;
+      font-weight: 500;
+    }
+  }
 }
